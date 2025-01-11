@@ -219,9 +219,14 @@
 
 /* ------------------------------ Responsive ------------------------------ */
 @media (max-width: 768px) {
+  .main-content {
+    overflow: hidden;
+  }
+
   .slider-components {
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
 
   .card-components {
@@ -229,8 +234,25 @@
     /* Ajusta la altura automáticamente en pantallas pequeñas */
   }
 
-  .slider-buttons-components {
-    top: 70%;
-    /* Ajusta ligeramente la posición en pantallas pequeñas */
+  .slider-button-components::after {
+    content: 'Nuevo Texto'; /* Cambia 'Nuevo Texto' por el texto que quieras */
+    position: absolute;
+    top: 100%; /* Posiciónalo justo debajo del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo para el texto */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 0.8rem; /* Tamaño de fuente */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    opacity: 0; /* Oculta inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave para mostrar */
+    pointer-events: none; /* Evita interferencia con clics */
   }
+  
+  .slider-button-components:hover::after {
+    opacity: 1; /* Muestra el texto al pasar el ratón */
+  }
+  
 }
