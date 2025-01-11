@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Redirigir al usuario a la página del dashboard
-        window.location.href = `/pages/dashboard/dashboard.html?access_code=${encodeURIComponent(accessCode)}`;
+        window.location.href = `../../pages/dashboard/dashboard.html?access_code=${encodeURIComponent(accessCode)}`;
     });
 
     // Mostrar el mensaje de error y ocultarlo después de 1.5 segundos
