@@ -14,14 +14,14 @@ function showModal() {
 function startRedirectTimer() {
     // Temporizador para redirigir si no se hace clic en "Permanecer"
     redirectTimer = setTimeout(() => {
-        window.location.href = '/pages/proyectos/materialCasa.html'; // URL de redirección
-    }, 3 * 60 * 1000); // 3 minutos de espera
+        window.location.href = '../../pages/proyectos/materialCasa.html'; // URL de redirección
+    }, 3 *  1000); // 3 minutos de espera
 }
 
 // Función para restablecer el temporizador de inactividad
 function resetInactivityTimer() {
     clearTimeout(inactivityTimer);
-    inactivityTimer = setTimeout(showModal, 10 * 60 * 1000); // Mostrar modal después de 10 minutos de inactividad
+    inactivityTimer = setTimeout(showModal, 3 * 1000); // Mostrar modal después de 10 minutos de inactividad
 }
 
 // Detectar actividad del usuario y restablecer el temporizador
