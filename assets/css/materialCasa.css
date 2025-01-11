@@ -6,7 +6,7 @@
 .background-section {
     position: relative;
     height: 100vh;
-    background-image: url('../../assets/img/IMG_6057.png'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('../../../../assets/img/IMG_6057.png'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     padding: 150px 0;
