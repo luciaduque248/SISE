@@ -207,7 +207,7 @@ a{
 
     .submenu {
         position: static;
-        margin-top: 10px;
+        margin-top: 30px;
         box-shadow: none;
     }
 
@@ -229,7 +229,7 @@ a{
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: -25px;
+        margin-top: 25px;
         margin-left: -25px;
     }
 }
