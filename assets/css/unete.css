@@ -25,6 +25,25 @@
     line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+    .intro {
+        font-size: 15px;
+        padding: 0 30px;
+    }
+
+    .join-section .form-instruction {
+        font-size: 30px;
+    }
+
+    .join-section .logo-unete {
+        max-width: 200px;
+    }
+
+    .join-section h1 {
+        font-size: 30px;
+    }
+}
+
 .join-form{
     font-family: 'Lato', sans-serif;
 }
