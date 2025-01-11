@@ -220,16 +220,20 @@ h1 {
     .card__img {
         height: 180px; /* Altura menor para celulares */
     }
+
+    .card__article {
+        border-radius: 0.7rem;
+    }
 }
 
 
 @media (max-width: 768px) {
     .card {
         flex-direction: column;
-        max-width: 95%;
+        max-width: 80%;
         /* Ajuste responsivo */
         height: auto;
-        /* Permitir ajuste dinámico */
+        padding: 20px 20px;
     }
 
     .card img {
